@@ -112,7 +112,6 @@ These typical protocol features and capabilities currently are *not available* i
 
 * The OpenID Connect `end_session_endpoint` parameter, which allows an app to end the user's session, is not available with the v2.0 endpoint.
 * ID tokens that are issued by the v2.0 endpoint have only a pairwise identifier for the user. This means that two different applications receive different IDs for the same user. Note that by querying the Microsoft Graph `/me` endpoint, you can get a correlatable ID for the user that you can use across applications.
-* ID tokens that are issued by the v2.0 endpoint do not contain an `email` claim for the user, even if you acquire permission from the user to view their email.
 * The OpenID Connect UserInfo endpoint is not implemented on the v2.0 endpoint. However, all user profile data that you potentially would receive at this endpoint is available from the Microsoft Graph `/me` endpoint.
 * The v2.0 endpoint does not support issuing role or group claims in ID tokens.
 
